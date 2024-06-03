@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitFinder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FITFINDER</div>
+            <div class="menu">
+                <a href="#">Home</a>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-text">
+                
+                <section class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="https://tinybeans.com/wp-content/uploads/2022/08/mom-and-son-sending-clothes-to-an-online-consignment-shop.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/037/805/494/small_2x/two-asian-blogger-showing-clothes-in-front-of-the-camera-to-recording-vlog-video-live-streaming-at-her-shop-online-shopping-cart-notion-on-sofa-at-home-free-photo.JPG" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://www.muscleandfitness.com/wp-content/uploads/2015/02/Female-Shopping-Online-For-Sneakers-For-Her-Fitness-Resolutions.jpg?quality=86&strip=all" style="width:100%">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>
+    <main> 
+        <section class="about-us">
+            <h2>About Us</h2>
+            <p>Greetings,</p>
+            <p>In the era of digital time, various shopping online style is different for customers have trouble in finding the right item that truly reflects their personal attitude and feelings. Although there are plenty of clothing websites available, consumers are still unable to use the platforms from where they can connect with clothing items that adjust well as per size and color of the buyer. This causes a very irritating situation for buyers and they tend to run away from the shops putting "clothing businesses" at big risk of leaving a wrong impression on the minds of the potential customers.</p>
+            <p>We introduce FitFinder- a cutting-edge virtual store solution to make the choice of the perfect fitting items personalized for the customers. FitFinder will inspire a whole new level of fashion discovery and now most consumers will buy clothes reflecting their distinctive personality traits. <span class="highlight">Enjoy shopping!</span></p>
+            <button>Continue</button>
+        </section>
+    </main>
+    <script>
+        let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+    </script>
+</body>
+</html>
